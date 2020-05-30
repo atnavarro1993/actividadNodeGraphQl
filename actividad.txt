@@ -1,0 +1,14 @@
+pre requisitos:
+
+1- crear tres JSON -> Course / Students / Grade
+2- Course tiene que tener id, nombre y descripcion
+3- Students tiene que tener id, name , lastName, courseId
+   (se asume que el courseId es unico y puede haber solo uno)
+4- Grade tiene id, courseId y studentId
+
+crear una estructura en graphQl para:
+
+1-consultar todos los cursos, estudiantes y notas.
+2-consultar por id los cursos, con sus estudiantes y sus notas
+3-ser capaz de crear cursos, estudiantes y notas.
+4- ser capaz de borrar cursos, estudiantes y notas.
