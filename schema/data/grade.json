@@ -4,5 +4,11 @@
         "mark":7,
         "courseId":1,
         "studentId":1
+    },
+    {
+        "id":2,
+        "mark":8,
+        "courseId":1,
+        "studentId":2
     }
 ]
