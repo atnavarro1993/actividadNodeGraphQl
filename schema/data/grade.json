@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "id":1,
+        "mark":7,
+        "courseId":1,
+        "studentId":1
+    }
+]

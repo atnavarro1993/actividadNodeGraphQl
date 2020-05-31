@@ -4,5 +4,11 @@
         "name":"ariel",
         "lastName":"navarro",
         "courseId":1
+    },
+    {
+        "id":2,
+        "name":"macarena",
+        "lastName":"pecha",
+        "courseId":1
     }
 ]
