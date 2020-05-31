@@ -3,5 +3,10 @@
         "id":1,
         "name":"nodejs",
         "description":"node is a backend use of javascript"
+    },
+    {
+        "id":2,
+        "name":"react",
+        "description":"react is a javascript framework to create web pages"
     }
 ]
