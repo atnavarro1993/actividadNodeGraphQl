@@ -11,4 +11,4 @@ crear una estructura en graphQl para:
 1-consultar todos los cursos, estudiantes y notas.
 2-consultar por id los cursos, con sus estudiantes y sus notas
 3-ser capaz de crear cursos, estudiantes y notas.
-4- ser capaz de borrar cursos, estudiantes y notas.
+4-ser capaz de borrar cursos, estudiantes y notas.
