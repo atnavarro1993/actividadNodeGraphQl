@@ -1,7 +1,7 @@
 const express = require('express');
 const expressGraphql = require('express-graphql');
 const app = express();
-const schema = require('../structure/schema');
+const schema = require('../schema/schema')
 
 const port = 3000;
 

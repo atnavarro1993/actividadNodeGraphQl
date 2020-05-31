@@ -3,14 +3,13 @@ const {
     GraphQLList,
     GraphQLInt
 } = require('graphql');
-const student = require('./students/student.json');
-const course = require('./courses/course.json');
-const grade = require('./grades/grade.json');
-const StudentType = require('./students/students')
-const CourseType = require('./courses/courses')
-const GradeType = require('./grades/grades')
-
-
+const {
+    CourseType,
+    StudentType,
+    GradeType} = require('./structure/structure');
+const students = require('./data/student.json');
+const courses = require('./data/course.json');
+const grades = require('./data/grade.json');
 
 const RootQueryType = new GraphQLObjectType({
     name: "Query",
@@ -19,17 +18,17 @@ const RootQueryType = new GraphQLObjectType({
         students: {
             type: new GraphQLList(StudentType),
             description:"list of all students",
-            resolve:()=>student
+            resolve:()=>students
         },
         courses:{
             type: new GraphQLList(CourseType),
             description:"list of all courses",
-            resolve:()=>course
+            resolve:()=>courses
         },
         grades:{
             type:new GraphQLList(GradeType),
             description:"list of all grades",
-            resolve:()=>grade
+            resolve:()=>grades
         }
     })
 });
