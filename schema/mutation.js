@@ -9,6 +9,7 @@ const { CourseType, StudentType, GradeType } = require("./structure/structure");
 const students = require("./data/student.json");
 const courses = require("./data/course.json");
 const grades = require("./data/grade.json");
+const _ = require("lodash");
 
 const MutationQueryType = new GraphQLObjectType({
   name: "mutation",
@@ -52,6 +53,7 @@ const MutationQueryType = new GraphQLObjectType({
     },
     addGrade: {
       type: GradeType,
+      description: "add a grade",
       args: {
         mark: { type: GraphQLNonNull(GraphQLInt) },
         courseId: { type: GraphQLNonNull(GraphQLInt) },
@@ -66,6 +68,54 @@ const MutationQueryType = new GraphQLObjectType({
         };
         grades.push(mark);
         return mark;
+      },
+    },
+    removeCourse: {
+      type: CourseType,
+      description: "remove a course",
+      args: {
+        id: { type: GraphQLNonNull(GraphQLInt) },
+      },
+      resolve: (parent, args) => {
+        const del = {
+          id: args.id,
+        };
+        _.remove(courses, (course) => {
+          return course.id === del.id;
+        });
+      },
+    },
+    removeStudent: {
+      type: StudentType,
+      description: "remove a student",
+      args: {
+        id: { type: GraphQLNonNull(GraphQLInt) },
+      },
+      resolve: (parent, args) => {
+        const del = {
+          id: args.id,
+        };
+        _.remove(students, (student) => {
+          return student.id === del.id;
+        });
+        _.remove(grades, (grade) => {
+          return grade.studentId === del.id;
+        });
+      },
+    },
+    removeGrade: {
+      type: GradeType,
+      description: "remove a grade from a student",
+      args: {
+        studentId: { type: GraphQLNonNull(GraphQLInt) },
+      },
+      resolve: (parent, args) => {
+        const del = {
+          studentId: args.studentId,
+        };
+        _.remove(grades, (grade) => {
+          return grade.studentId === del.studentId;
+        });
       },
     },
   }),
