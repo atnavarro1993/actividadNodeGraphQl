@@ -10,5 +10,35 @@
         "name":"silvina",
         "lastName":"capoble",
         "courseId":1
+    },
+    {
+        "id":3,
+        "name":"franco",
+        "lastName":"carrizo",
+        "courseId":4
+    },
+    {
+        "id":4,
+        "name":"carlos",
+        "lastName":"cesar",
+        "courseId":2
+    },
+    {
+        "id":5,
+        "name":"federico",
+        "lastName":"sepulveda",
+        "courseId":6
+    },
+    {
+        "id":6,
+        "name":"matias",
+        "lastName":"berges",
+        "courseId":3
+    },
+    {
+        "id":7,
+        "name":"lautaro",
+        "lastName":"ontivero",
+        "courseId":5
     }
 ]

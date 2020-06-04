@@ -8,5 +8,25 @@
         "id":2,
         "name":"react",
         "description":"react is a javascript framework to create web pages"
+    },
+    {
+        "id":3,
+        "name":"python",
+        "description":"is a flexible-multiparadigm language that is crossplatform capabililities"
+    },
+    {
+        "id":4,
+        "name":"java",
+        "description":"java is mainly a POO langage programing tool that is almos everywhere and is corssplatform"
+    },
+    {
+        "id":5,
+        "name":"scratch",
+        "description":"is a child learning tool to teach the basics of programming via building blocks"
+    },
+    {
+        "id":6,
+        "name":"php",
+        "description":"nobody likes php"
     }
 ]

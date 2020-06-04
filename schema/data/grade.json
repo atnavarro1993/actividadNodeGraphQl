@@ -10,5 +10,35 @@
         "mark":8,
         "courseId":1,
         "studentId":2
+    },
+    {
+        "id":3,
+        "mark":5,
+        "courseId":4,
+        "studentId":3
+    },
+    {
+        "id":4,
+        "mark":9,
+        "courseId":2,
+        "studentId":4
+    },
+    {
+        "id":5,
+        "mark":2,
+        "courseId":6,
+        "studentId":5
+    },
+    {
+        "id":6,
+        "mark":3,
+        "courseId":3,
+        "studentId":6
+    },
+    {
+        "id":7,
+        "mark":8,
+        "courseId":5,
+        "studentId":7
     }
 ]
